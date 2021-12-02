@@ -3,7 +3,7 @@ palgad=loe_failist_listisse("Palgad.txt")
 inimesed=loe_failist_listisse("Inimesed.txt")
 
 while True:
-    print("0-Välja\n1-Lisamine\n2-Kõik\n3-Otsing nimi jargi")
+    print("0-Välja\n1-Lisamine\n2-Kõik\n3-Otsing nimi jargi\n4-Lisa")
     v=int(input())
     if v==0:
         break
@@ -19,5 +19,5 @@ while True:
         vastus=otsing_nimi_jargi(inimesed, palgad)
         print(vastus)
     elif v==4:
-        summa=kesk
-        print()        
+        palgad,inimesed=lisa(palgad, inimesed)
+        print(palgad, inimesed)

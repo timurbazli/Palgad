@@ -52,17 +52,17 @@ def bs(pal, i):                                             #код не мой 
     b=palgad.index(a)                                       #код не мой украл у Кристины.
     return a, inimesed[b]                                   #код не мой украл у Кристины.
 
-def lisa(ini, pal):
+def lisa(nimi, palk):
     nimi=str(input("Nimi: "))
-    inimisedd.append(nimi)
+    inimised.append(nimi)
     palk=float(input("Palk: "))
-    palgadd.append(palk)
-    return inimisedd,palgadd
+    palgad.append(palk)
+    return inimised,palgad
 
 def lisamine(inimisedd, palgadd):
     kuipalju = int(input("Kui palju inimesi lisada: "))
     for j in range(kuipalju):
-        nimi=str(input("Nimi: "))
+        nimi=input("Nimi: ")
         inimisedd.append(nimi)
         palk=float(input("Palk: "))
         palgadd.append(palk)
